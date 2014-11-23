@@ -105,6 +105,10 @@ setup(
         'console_scripts': [ ],
     },
 
+    package_data = {
+        'ubl.const.schema': ['*.xsd'],
+    },
+
     tests_require=test_reqs,
     cmdclass = {'test': Tox},
 )
