@@ -44,7 +44,7 @@ except OSError:
 ### testing stuff
 
 install_reqs = (
-    'spyne>=2.11', 'lxml>=3.4.1',
+    'spyne>=2.12', 'lxml>=3.4.1',
 )
 
 test_reqs = install_reqs + ('pytest', 'tox')
