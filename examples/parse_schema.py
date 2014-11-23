@@ -40,7 +40,7 @@ from ubl.const.schema.parsed import xmldsig
 from ubl.const.schema.parsed import NS
 
 
-data = open('example.xml', 'r').read()
+data = open('example.xml', 'rb').read()
 data_elt = etree.fromstring(data, parser=parser.PARSER)
 sig_elt = data_elt.xpath('ds:Signature', namespaces={'ds': NS.XMLDSIG})[0];
-print get_xml_as_object(sig_elt, xmldsig.SignatureType)
+print(get_xml_as_object(sig_elt, xmldsig.SignatureType))
